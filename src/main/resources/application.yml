@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: productodb # Replace with your MongoDB database name
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+
+# Configuración del API Swagger
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    displayRequestDuration: true
+    tryItOutEnabled: true
